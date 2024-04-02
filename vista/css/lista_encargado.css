@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.listaobj{
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 3%;
+margin-bottom: 3%;
+
+}
+.listaobj table{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+.listaobj th,td{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    color: black;
+    border:1px solid;
+    padding: 0.8%;
+    border-style:outset ;
+}
+.listaobj tr:hover{
+   background-color: darkgray;
+}
+.listaobj a{
+    font-size: 3vw;
+    color:black;
+
+ }
+ .encabezadot{
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 3%;
+background-color:aliceblue;
+ }
+ .encabezadot h3{
+    font-family: cursive;
+    text-align: center;
+    color: black;
+    font-size: 3vw;
+
+ }
