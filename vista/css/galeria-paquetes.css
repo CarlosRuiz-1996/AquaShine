@@ -1,15 +1,4 @@
-@media all and (max-width: 1000px){
-    #desc #PunteroAqui{
-    height:100px;
-    }
-    #desc p {
-      font-size: 10px;
-      }
-      #desc #bot{
-        height:30px;
-        }
-    }
-    
+
     
     
     /* ***************************************
@@ -93,49 +82,39 @@
     COLORS
       *********************************************/
     
-      /*LINKS */
-    a{
-      color:red;
-      font-family: cursive;
-    }
-    /*ENCABEZAO*/
-    header{
-      background:black;
-      border-color:red;
-    }
-    /*TEXTO DEL LOGO*/
-    h1,h2{ text-align: center;
-      color: rgb(180, 31, 31);
-      font-family: cursive;
-    }
-    /*NAVEGACION*/
-    nav{
-      background:red;
-    }
-    /*LINKS DE NAVEGACION*/
-    nav a, nav a:visited{
-      color:#f5f5f5;
-    }
-    /*LINKS DE SELECCIONADOS*/
-    nav a.selected, a:hover {
-      color:#f5f5f5;
-    }
+  
     /*CUERPO*/
     body{
-      background-color:black;
-      color:#fff;
+      background-color:white;
+    
     }
    
   p{
-      color: aliceblue;
+      color:black ;
       font-family: cursive;
   }
+  .tabla{
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
       
+  .fila{
+    max-width:100%;
+    margin-left:3;
+    margin-right:3%
+}
+.columna{
+  width:40%;
+  margin:auto;
+  float:left;
+  padding:0.5%;
+}
   
     
       
      
-      #PunteroAqui:hover{ width:500px; height:500px; 
+      #PunteroAqui:hover{ width:100%; height:300%; 
       
         }
        #PunteroAqui{
@@ -151,7 +130,7 @@
           margin: 20px;
      
           transition: all 0.55;
-         background-color: antiquewhite;
+         background-color: rgba(36, 36, 35, 0.015);
           } 
           
       #BOT:hover{
@@ -176,35 +155,6 @@
           transition: all 0.55;
          background-color:darkgray; 
           } 
-  
-  /*animacion para el carrito*/
-  #car{
-      animation-duration:4s;
-      animation-name: car;
-     
-  }
-    
-    @keyframes car {
-      from {
-        margin-left: 500%;
-        width:50%;
-      }
-      to{
-          margin-left: 0%;
-          width:70%;
-        }
-  
-      }
-  
-  
-  body {
-  
-      background-repeat:repeat;
-   background-color: black;
-      
-      backdrop-filter: blur(8px);
-  }
-  
   #desc{
     margin-top: 50px;
     margin-left: 50px;

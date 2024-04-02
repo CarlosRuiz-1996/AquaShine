@@ -1,124 +1,155 @@
 /*Estilo Index*/
 
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing:  border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.encabezado{
-    max-width: 100%;
-    overflow:hidden;
+.encabezado {
+  max-width: 100%;
+  overflow: hidden;
 }
-.encabezado img{
-    width: 20%;
-    float: left;
+.encabezado img {
+  margin: 20px;
+  width: 8%;
+  float: left;
+  border-radius: 50%;
 }
-.encabezado h1{
-    font-family: Arial;
-    font-size: 64px;
-    color:blue;
+.encabezado h1 {
+  font-family: Arial;
+  font-size: 64px;
+  color: blue;
 }
-.encabezado nav{
-    max-width:100%;
-    margin:0%;
-    background-color:dimgrey;
-    overflow:  hidden;
-  
+.encabezado nav {
+  max-width: 100%;
+  margin: 0%;
+  background-color: #000000;
+  overflow: hidden;
 }
-.encabezado a{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    color: aliceblue;
-    text-decoration: none;
-    float:left;
-    text-align: center;
-    padding: 2% 3%;
+.encabezado a {
+  margin-top: 1.5%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  color: #f4eae0;
+  text-decoration: none;
+  float: left;
+  /* text-align: center; */
+  padding: 2% 3%;
 }
-.clearfix::after{
-    content:"";
-    display: table;
-    clear:both;
-    
-}
-
-.encabezado a:hover{
-    background-color: deepskyblue;
-    color:black;
-}
-.banner{
-    max-width:100%
-   
-
-
-}
-.banner img{
-    width :50%;
-    padding:1%;
-    height: 350px;
-  
-}
-.fila{
-    max-width:100%;
-    margin-left:3;
-    margin-right:3%
-}
-.columna{
-    width:24.99%;
-    margin:auto;
-    float:left;
-    padding:0.5%;
-}
-.galeria{
-    max-width:100%;
-    padding: 5%;
-    background-color:darkslategrey;
-}
-.galeria img{
-    width: 100%;
-    height: auto;
-}
-.galeria:hover{
-    background-color: darkblue;
-    transform: rotate(3deg) ;
-}
-.desc p{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:1.2vw;
-    text-align: left;
-    color: antiquewhite;
-    padding: 0.2;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-
-
-.footer table{
-    width: 100%;
-    height: 160px;
-    overflow: hidden;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 1vw;
-background-color: rgb(98, 0, 255);
-color: bisque;
-float: left;
-text-align: center;
-
+.encabezado a:hover {
+  background-color: #faf6f0;
+  color: black;
 }
-.cont_perfil{
-    max-width :100%;
-    height: 480px;
+.banner {
+  max-width: 100%;
+}
+.banner img {
+  width: 50%;
+  padding: 1%;
+  height: 350px;
+}
+.fila {
+  max-width: 100%;
+  margin-left: 3;
+  margin-right: 3%;
+}
+.columna {
+  width: 24.99%;
+  margin: auto;
+  float: left;
+  padding: 0.5%;
+}
+.galeria {
+  max-width: 100%;
+  padding: 5%;
+  background-color: darkslategrey;
+}
+.galeria img {
+  width: 100%;
+  height: auto;
+}
+.galeria:hover {
+  background-color: darkblue;
+  transform: rotate(3deg);
+}
+.desc p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2vw;
+  text-align: left;
+  color: antiquewhite;
+  padding: 0.2;
 }
 
-.slider-container {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    overflow-x: scroll;
- scroll-snap-type: x mandatory;
+.footer {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vw;
+  background-color: #f4dfc8;
+  color: bisque;
+  float: left;
+  text-align: center;
+}
+
+.footer p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  color: #000000;
+  text-decoration: none;
+  float: center;
+  text-align: center;
+
+  padding: 2% 3%;
+}
+
+.foot_top {
+  margin-top: -25px;
+}
+
+/* carrusel*/
+
+
+.slider-box {
+  width: 100%;
+  /* height: auto; */
+  max-height: 500px; /* ajusta este valor según lo que necesites */
+background-color: #070707;
+  margin: 0 auto 0;
+  overflow: hidden;
+}
+.slider-box ul {
+  display: flex;
+  padding: 0%;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-box li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+  margin-right: 50px;
+}
+.slider-box img {
+  width: 100%;
+  height: 30%;
+  border-radius: 80%;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
   }
-  
-  .slider-container img {
-    flex: 0 0 100%;
-
-    object-fit: cover;
-    scroll-snap-align: center;
+  33.3333% {
+    transform: translateX(-67%);
   }
+  100% {
+    transform: translateX(0%);
+  }
+}
